@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "shopping-bot"
+version = "0.1.0"
+description = "A telegram bot to get us our shopping list"
+authors = ["Attila Pinter <adathor@opensuse.org>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "shopping_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyTelegramBotAPI = "^4.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
