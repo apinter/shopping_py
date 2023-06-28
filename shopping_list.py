@@ -48,9 +48,9 @@ def clear_list():
 
 @bot.message_handler(commands=['help'])
 def help_handler(message):
-    bot.send_message(message.chat.id, "You can get items with /sync, add items with /add, remove items with /rm, and clear the list with /clear.")
+    bot.send_message(message.chat.id, "You can get items with /list, add items with /add, remove items with /rm, and clear the list with /clear.")
 
-@bot.message_handler(commands=['sync'])
+@bot.message_handler(commands=['list'])
 def sign_handler(message):
     shopping_message = read_shopping_list()
     bot.send_message(message.chat.id, "Here's your list!")
