@@ -5,7 +5,7 @@ RUN apk update && \
 
 RUN apk add python3 &&\
     python3 -m ensurepip && \
-    python3 -m pip install pyTelegramBotAPI && \
+    python3 -m pip install pyTelegramBotAPI --break-system-packages && \
     mkdir -p /app/data
 
 COPY shopping_list.py /app/shopping_list.py
