@@ -4,7 +4,7 @@ RUN apk update && \
     apk upgrade
 
 RUN apk add python3 &&\
-    python3 -m ensurepip && \
+    python3 -m ensurepip --break-system-packages && \
     python3 -m pip install pyTelegramBotAPI --break-system-packages && \
     mkdir -p /app/data
 
